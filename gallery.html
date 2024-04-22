@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+
+<title></title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>The Hair Lounge - Galerie</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="lightbox.css">
+
+<!--NEUE FONTS-->
+<!--Neue Font für Text: Average Sans-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Average+Sans&display=swap" rel="stylesheet">
+<!--Kaushan Script-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+<!--Neue Font für Titel: Poppins-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<!--Neue Font für Titel2: Italianno-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Average+Sans&family=Bevan:ital@0;1&family=Days+One&family=Italianno&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+<!--NAVIGATION BEGINNT-->
+<!--NAVIGATION BEGINNT-->
+<!--NAVIGATION BEGINNT-->
+
+    <div id="navigation" class="navigation">
+
+        <nav>
+
+            <ul>
+
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+
+                <li>
+                    <a href="offers.html">ANGEBOT & PREISE</a>
+                </li>
+
+                <li>
+                    <a href="gallery.html">GALERIE</a>
+                </li>
+
+                <li>
+                    <a class="narrow-spacing"  href="aboutme.html">ÜBER MICH</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">KONTAKT</a>
+                </li>
+
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+<!--BUTTON NAVIGATION-->
+<!--BUTTON NAVIGATION-->
+<!--BUTTON NAVIGATION-->
+
+    <div class="menubtn" id="menubtn">
+
+        <img id="menu" alt="Menu Button" src="images/menu.png">
+
+    </div>
+
+    <!-- code for body -->
+
+    <section id="gallery">
+
+        <div class="gallery">
+            <a href="images/Bild1.jpg" data-lightbox="models">
+                <img src="images/Bild1.jpg"></a>
+            <a href="images/Bild3.jpg" data-lightbox="models">
+                <img src="images/Bild21.jpg"></a>
+            <a href="images/Bild5.jpg" data-lightbox="models">
+                <img src="images/Bild5.jpg"></a>
+            <a href="images/Bild10.jpg" data-lightbox="models">
+                    <img src="images/Bild10.jpg"></a>
+            <a href="images/Bild7.jpg" data-lightbox="models">
+                    <img src="images/Bild7.jpg"></a>
+            <a href="images/Bild12.jpg" data-lightbox="models">
+                    <img src="images/Bild12.jpg"></a>            
+        </div>
+    
+    </section>
+
+    <script>
+        var menubtn = document.getElementById('menubtn');
+        var navigation = document.getElementById('navigation');
+        var menu = document.getElementById('menu');
+
+        menubtn.onclick = function() {
+        var computedStyle = window.getComputedStyle(navigation); // Aktuellen Wert der CSS-Eigenschaften erhalten
+        var rightValue = computedStyle.getPropertyValue('right'); // Wert der 'right'-Eigenschaft erhalten
+
+    if(rightValue === "-200px") {
+        navigation.style.right = "0";
+        menu.src = "images/cancel.png";
+    } else {
+        navigation.style.right = "-200px";
+        menu.src = "images/menu.png";
+    }
+}
+
+    </script>
+
+    <script src="lightbox-plus-jquery.js"></script>
+
+</body>
+
+</html>

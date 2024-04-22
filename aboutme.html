@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+
+<title></title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>The Hair Lounge - Über mich</title>
+<link rel="stylesheet" href="styles.css">
+
+<!--NEUE FONTS-->
+<!--Neue Font für Text: Average Sans-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Average+Sans&display=swap" rel="stylesheet">
+<!--Kaushan Script-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+<!--Neue Font für Titel: Poppins-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<!--Neue Font für Titel2: Italianno-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Average+Sans&family=Bevan:ital@0;1&family=Days+One&family=Italianno&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+<!--Neue Font für Über mich: Indie Flower-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+<!--NAVIGATION BEGINNT-->
+<!--NAVIGATION BEGINNT-->
+<!--NAVIGATION BEGINNT-->
+
+    <div id="navigation" class="navigation">
+
+        <nav>
+
+            <ul>
+
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+
+                <li>
+                    <a href="offers.html">ANGEBOT & PREISE</a>
+                </li>
+
+                <li>
+                    <a href="gallery.html">GALERIE</a>
+                </li>
+
+                <li>
+                    <a class="narrow-spacing"  href="aboutme.html">ÜBER MICH</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">KONTAKT</a>
+                </li>
+
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+<!--BUTTON NAVIGATION-->
+<!--BUTTON NAVIGATION-->
+<!--BUTTON NAVIGATION-->
+
+    <div class="menubtn" id="menubtn">
+
+        <img id="menu" alt="Menu Button" src="images/menu.png">
+
+    </div>
+
+    <!-- code for body -->
+
+    <section id="about-me">
+
+        <a href="index.html">
+        <img alt="Logo Tanja" class="logoweg" src="images/Logo.jpg" id="logo"></a>
+
+        <div class="container">
+            <div class="content-section">
+                <div class="title">
+                    <h4>Tanja Hunkeler</h4>
+                    <h5>Coiffeuse EFZ & Fachfrau Gesundheit EFZ</h5>
+                </div>
+                <div class="content">
+                    <p>"Meine Coiffeuse-Karriere begann mit einem Praktikum, gefolgt von meiner Ausbildung zur Coiffeus EFZ bis 2017. 
+                        Nach anschliessender Vollzeitarbeit in einem Salon bis 2018 verfolgte ich meine Leidenschaft neben meiner Zweitausbildung zur Fachfrau 
+                        Gesundheit weiter. Jetzt erfülle ich mir meinen langersehnten Traum als Teilzeit-Coiffeuse - und das wo auch immer Sie mich brauchen.<br><br>
+                        Meine Arbeit ist meine Passion und motiviert mich täglich aufs Neue. Sie ermöglicht mir, an neuen Herausforderungen zu 
+                        wachsen und meine Ziele zu erreichen. Um den höchsten Ansprüchen stets gerecht zu werden, besuche ich regelmässige Fortbildungen.
+                        Mein Hauptanliegen dabei ist es, Ihnen zu Hause die vollen Vorzüge eines Coiffeur-Besuchs zu bieten.<br>
+                        Ich freue mich darauf, Sie kennen zu lernen."</p>
+                        <div class="home-btn home-btn2">
+                            <a href="contact.html">
+                                <span></span>
+                                Kontakt
+                                </a>
+                        </div>
+                </div>
+            </div>
+            <div class="image-section">
+                <img src="images/Bild11.jpg">
+            </div>
+        </div>
+    
+    </section>
+
+    <script>
+        var menubtn = document.getElementById('menubtn');
+        var navigation = document.getElementById('navigation');
+        var menu = document.getElementById('menu');
+
+        menubtn.onclick = function() {
+        var computedStyle = window.getComputedStyle(navigation); // Aktuellen Wert der CSS-Eigenschaften erhalten
+        var rightValue = computedStyle.getPropertyValue('right'); // Wert der 'right'-Eigenschaft erhalten
+
+    if(rightValue === "-200px") {
+        navigation.style.right = "0";
+        menu.src = "images/cancel.png";
+    } else {
+        navigation.style.right = "-200px";
+        menu.src = "images/menu.png";
+    }
+}
+
+    </script>
+
+</body>
+
+</html>
