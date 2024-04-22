@@ -540,7 +540,6 @@ tr:nth-child(odd){
         url(images/Bild.jpg);
     background-size: cover;
     background-position: center;
-    height: 100svh;
 }
 
 .container {
