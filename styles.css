@@ -761,8 +761,8 @@ input::placeholder, textarea::placeholder {
 
 @media screen and (max-width: 480px) {
     .padder {
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding-left: 10rem;
+        padding-right: 10rem;
     }
     }
 
