@@ -540,6 +540,7 @@ tr:nth-child(odd){
         url(images/Bild.jpg);
     background-size: cover;
     background-position: center;
+    height: 100svh;
 }
 
 .container {
@@ -757,6 +758,13 @@ input::placeholder, textarea::placeholder {
 @media (prefers-reduced-motion: no-preference) {
     *{scroll-behavior: smooth;}
 }
+
+@media screen and (max-width: 480px) {
+    .padder {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    }
 
 @media screen and (max-width: 700px) {
     #home h1 {
