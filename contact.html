@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+
+<title></title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>The Hair Lounge - Kontakt</title>
+<link rel="stylesheet" href="styles.css">
+
+<!--NEUE FONTS-->
+<!--Neue Font für Text: Average Sans-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Average+Sans&display=swap" rel="stylesheet">
+<!--Kaushan Script-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+<!--Neue Font für Titel: Poppins-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<!--Neue Font für Titel2: Italianno-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Average+Sans&family=Bevan:ital@0;1&family=Days+One&family=Italianno&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+    
+
+<!--NAVIGATION BEGINNT-->
+<!--NAVIGATION BEGINNT-->
+<!--NAVIGATION BEGINNT-->
+
+    <div id="navigation" class="navigation">
+
+        <nav>
+
+            <ul>
+
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+
+                <li>
+                    <a href="offers.html">ANGEBOT & PREISE</a>
+                </li>
+
+                <li>
+                    <a href="gallery.html">GALERIE</a>
+                </li>
+
+                <li>
+                    <a class="narrow-spacing"  href="aboutme.html">ÜBER MICH</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">KONTAKT</a>
+                </li>
+
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+<!--BUTTON NAVIGATION-->
+<!--BUTTON NAVIGATION-->
+<!--BUTTON NAVIGATION-->
+
+    <div class="menubtn" id="menubtn">
+
+        <img id="menu" alt="Menu Button" src="images/menu.png">
+
+    </div>
+
+<!--MAIN-->
+
+    <main>
+
+        <section id="contact-main">
+
+            <div class="bereich">
+
+            <a href="index.html">
+            <img alt="Logo Tanja" src="images/Logo.jpg" id="logo"></a>
+
+            <div class="contacts">
+
+                        <form class="contact-top" action="https://api.web3forms.com/submit" method="POST">
+
+                            <div class="form-title">
+                                <h4 class="contact-sub">Kontakt<span>ieren Sie mich</span></h4>
+                            </div>
+                            
+                            <input type="hidden" name="access_key" value="dbd0ca5f-2cd6-4086-b60a-dfb9f102a439">
+                            <input name="name" type="text" class="contact-inputs" placeholder="Ihr Name" required>
+                            <input name="email" type="email" class="contact-inputs" placeholder="Ihre E-Mail" required>
+                            <textarea name="message" class="contact-inputs" placeholder="Ihre Nachricht" required></textarea>
+                            <button class="submit-button" type="submit"><span></span>Senden</button>
+    
+                        </form>
+
+            </div>
+
+        </div>
+
+        
+
+            <footer>
+
+                <div class="bereich">
+
+                <div class="contact-bottom">
+
+                    <div class="socials">
+                        <a href="tel:+41775218914">
+                        <h4 class="contact-subs">Telefon</h4>
+                        <img alt="Phone" src="images/phone.png" class="social-icons"></a>
+                    </div>
+
+                    <div class="socials">
+                        <a href="https://api.whatsapp.com/send?phone=++41775218914" target="_blank">
+                        <h4 class="contact-subs">WhatsApp</h4>
+                        <img alt="WhatsApp" src="images/whatsapp.png" class="social-icons"></a>
+                    </div>
+                    
+                    <div class="socials">
+                        <a href="mailto:thehairlounge24@gmx.ch">
+                        <h4 class="contact-subs">E-Mail</h4>
+                        <img alt="E-Mail" src="images/email.png" class="social-icons"></a>
+                    </div>
+
+                    
+                    <div class="socials">
+                        <a href="https://www.instagram.com/thehairloungebeiihnenzuhause/" target="_blank">
+                        <h4 class="contact-subs">Instagram</h4>
+                        <img alt="Instagram" src="images/ig.png" class="social-icons"></a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            </footer>
+
+        
+
+        </section>
+
+    </main>
+
+    <script>
+        var menubtn = document.getElementById('menubtn');
+        var navigation = document.getElementById('navigation');
+        var menu = document.getElementById('menu');
+
+        menubtn.onclick = function() {
+        var computedStyle = window.getComputedStyle(navigation); // Aktuellen Wert der CSS-Eigenschaften erhalten
+        var rightValue = computedStyle.getPropertyValue('right'); // Wert der 'right'-Eigenschaft erhalten
+
+    if(rightValue === "-200px") {
+        navigation.style.right = "0";
+        menu.src = "images/cancel.png";
+    } else {
+        navigation.style.right = "-200px";
+        menu.src = "images/menu.png";
+    }
+}
+
+    </script>
+
+</body>
+
+</html>
