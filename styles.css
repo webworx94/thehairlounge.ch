@@ -759,13 +759,6 @@ input::placeholder, textarea::placeholder {
     *{scroll-behavior: smooth;}
 }
 
-@media screen and (max-width: 480px) {
-    .padder {
-        padding-left: 10rem;
-        padding-right: 10rem;
-    }
-    }
-
 @media screen and (max-width: 700px) {
     #home h1 {
         font-size: 50px;
