@@ -904,7 +904,8 @@ input::placeholder, textarea::placeholder {
     }
 
     .single {
-        width: 11rem;
+        min-width: 10rem;
+        max-width: 11rem;
     }
 
     .single-title {
