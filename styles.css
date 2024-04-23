@@ -953,6 +953,10 @@ input::placeholder, textarea::placeholder {
         height: 90svh;
     }
 
+    .contact-inputs {
+        max-width: 75%;
+    }
+
     .logoweg {
         display: none;
     }
