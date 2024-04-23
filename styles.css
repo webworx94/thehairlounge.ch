@@ -313,6 +313,14 @@ h4 {
     margin-bottom: 2rem;
 }
 
+h2 {
+    color: white;
+    font-family: Kaushan Script;
+    text-align: center;
+    margin-top: -1.5rem;
+    opacity: 0.85;
+}
+
 .angebote {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -814,6 +822,10 @@ input::placeholder, textarea::placeholder {
 
     .main-h1-1 {
         margin-bottom: -2rem;
+    }
+
+    h2 {
+        margin-top: 1rem;
     }
 
     .angebote {
