@@ -967,7 +967,7 @@ input::placeholder, textarea::placeholder {
     }
 
     .submit-button {
-        max-width: 50%;
+        max-width: 65%;
     }
 
     .contact-bottom {
