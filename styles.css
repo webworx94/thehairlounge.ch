@@ -966,6 +966,10 @@ input::placeholder, textarea::placeholder {
         height: 10svh;
     }
 
+    .submit-button {
+        max-width: 50%;
+    }
+
     .contact-bottom {
         padding: 0;
     }
