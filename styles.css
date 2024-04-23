@@ -795,7 +795,7 @@ input::placeholder, textarea::placeholder {
     padding-bottom: 2rem;
 }
 
-.home2 h3, p {
+.impressh3, .impressp {
     color: white;
     text-align: center;
     padding-top: 2rem;
