@@ -970,4 +970,8 @@ input::placeholder, textarea::placeholder {
         width: 80%;
         margin: 0 auto;
     }
+
+    .scrollBox {
+        max-width: 90%;
+    }
 }
