@@ -825,7 +825,8 @@ input::placeholder, textarea::placeholder {
     }
 
     h2 {
-        margin-top: 2.3rem;
+        margin-top: 1rem;
+        padding-top: 2rem;
     }
 
     .angebote {
