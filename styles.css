@@ -833,7 +833,7 @@ input::placeholder, textarea::placeholder {
     }
 
     .single {
-        width: 200px;
+        width: 11rem;
     }
 
     .single-title {
