@@ -959,10 +959,6 @@ input::placeholder, textarea::placeholder {
         max-width: 75%;
     }
 
-    .logoweg {
-        display: none;
-    }
-
     .footer {
         height: 10svh;
     }
