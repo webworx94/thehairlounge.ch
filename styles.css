@@ -783,7 +783,13 @@ button:hover {
     .gallery-grid {
         grid-template-columns: 1fr;
     }
-
+    #mapsnfeature {
+        display: block;
+    }
+    .map-container {
+        width: 100%;
+        height: 17rem;
+    }
 }
 @media screen and (max-width: 500px) {
     #logo {
