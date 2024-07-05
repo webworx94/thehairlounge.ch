@@ -142,7 +142,7 @@ h4 {
 }
 .continue {
     position: absolute;
-    bottom: 2rem;
+    bottom: 3rem;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
@@ -804,6 +804,9 @@ button:hover {
     }
     #übermich p {
         font-size: 1.4rem;
+    }
+    .continue {
+        bottom: 1.5rem;
     }
 }
 @media screen and (max-width: 350px) {
