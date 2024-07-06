@@ -805,6 +805,9 @@ button:hover {
     .title-text2 h1 {
         font-size: 3.5rem;
     }
+    .home-btn {
+        padding-top: 1rem;
+    }
     #übermich h2 {
         font-size: 2.5rem;
     }
