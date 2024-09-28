@@ -608,12 +608,21 @@ tr:nth-child(odd){
 }
 #impressum h3 {
     color: white;
+    font-size: 3rem;
 }
 .cont {
     max-width: 1300px;
     margin: 0 auto;
     color: white;
     padding: 4rem 2rem 4rem 2rem;
+}
+#impressum h4 {
+    font-weight: 500;
+    font-size: 1.75rem;
+}
+#impressum h5 {
+    font-weight: 500;
+    font-size: 1.25rem;
 }
 /* ------------------ FOOTER ------------------ */
 footer {
