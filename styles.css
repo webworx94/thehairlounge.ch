@@ -1,0 +1,849 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Poppins;
+}
+/* ------------------ LOGO ------------------ */
+/* ------------------ LOGO ------------------ */
+#logo {
+    max-width: 60px;
+    height: auto;
+    position: fixed;
+    top: 4%;
+    left: 7%;
+    z-index: 2;
+}
+/* ------------------ NAVIGATION ------------------ */
+/* ------------------ NAVIGATION ------------------ */
+.navigation {
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    right: -200px;
+    top: 0;
+    background: #009688;
+    z-index: 2;
+    transition: 0.3s;
+}
+nav ul {
+    padding-top: 6rem;
+}
+nav ul li {
+    list-style: none;
+    margin: 3.5rem 1.2rem;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+nav ul li a:hover {
+    color: #005048;
+}
+.menubtn {
+    width: 50px;
+    height: 50px;
+    background: #009688;
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    top: 30px;
+    z-index: 3;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.menubtn img {
+    width: 23px;
+    height: auto;
+    padding-top: 15px;
+}
+/* ------------------ HOME ------------------ */
+/* ------------------ HOME ------------------ */
+#home {
+    background: linear-gradient(
+        rgba(0,0,0,0.5), 
+        rgba(0,0,0,0.5) 20%,
+        rgba(0, 150, 136, 0.5),
+        rgb(0,150,136)) , 
+        url(images/Coiffeuse-schneidet-einem-Mann-die-Haare.webp);
+    background-size: cover;
+    background-position: center;
+    min-height: 100svh;
+}
+.title {
+    padding: 12rem 1rem 0 1rem;
+    text-align: center;
+    color: white;
+}
+h1 {
+    font-family: Kaushan Script;
+    font-size: 7rem;
+    font-weight: bold;
+    line-height: 1.15;
+}
+h2 {
+    font-weight: normal;
+    font-size: 3rem;
+}
+.start-h3 {
+    font-family: Italianno;
+    font-size: 3.4rem;
+    font-weight: 300;
+    padding-top: 1rem;
+    color: #fff;
+}
+h3 {
+    font-size: 1.85rem;
+    font-weight: 500;
+    color: #009688;
+    padding: 2rem 0 1rem 0;
+}
+h4 {
+    margin: 0.4rem 0 1.2rem 0;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+.home-btn {
+    padding-top: 3rem;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+.home-btn a {
+    width: 150px;
+    color: white;
+    text-decoration: none;
+    padding: 12px 0;
+    border: 2px solid white;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    transition: color 0.7s;
+}
+.home-btn a span {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    z-index: -1;
+    transition: 0.5s;
+}
+.home-btn a:hover span {
+    width: 100%;
+}
+.home-btn a:hover {
+    color: black;
+    font-weight: normal;
+}
+.continue {
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+}
+.continue img {
+    width: 50px;
+    height: 45px;
+    opacity: 55%;
+    cursor: pointer;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.continue img:hover {
+    transform: translateY(1rem);
+    opacity: 100%;
+}
+/* ------------------ HOME - SERVICE ------------------ */
+/* ------------------ HOME - SERVICE ------------------ */
+.title-text {
+    text-align: center;
+    padding: 5.4rem 0 1rem 0;
+}
+.title-text p {
+    font-size: 25px;
+    color: #009688;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+.title-text p::after {
+    content: '';
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(
+        #019578,
+        #fff);
+    position: absolute;
+    top: -50%;
+    left: 0;
+    z-index: -1;
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+.service-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    padding: 2rem 1rem;
+    gap: 3rem;
+}
+.text-container {
+    margin: auto;
+}
+.spreader {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.spreader p {
+    font-size: 1.2rem;
+}
+.feature-icon {
+    width: 3rem;
+    height: auto;
+    transform: scale(1.12);
+    border: 3px solid #009688;
+    padding: 0.4rem;
+    border-radius: 15px;
+}
+.service-bild {
+    max-width: 30rem;
+    height: auto;
+}
+#bio-img {
+    width: 100%;
+    border-radius: 1rem;
+    margin-top: 2.7rem;
+}
+.reverse-container {
+    flex-direction: row-reverse;
+}
+.reverse-container .text-container {
+    margin-right: auto;
+}
+.reverse-container .service-bild {
+    margin-left: auto;
+}
+/* ------------------ ANGEBOT ------------------ */
+/* ------------------ ANGEBOT ------------------ */
+#angebot {
+    background: linear-gradient(
+        rgba(0,0,0,0.5), 
+        rgba(0,0,0,0.5) 20%,
+        rgba(0, 150, 136, 0.5),
+        rgb(0,150,136)) , 
+        url(images/Frau-Haare-Hand-Schere.webp);
+    background-size: cover;
+    background-position: center;
+    min-height: 100svh;
+}
+.title-text2 {
+    color: #fff;
+    text-align: center;
+    padding: 4.5rem 0.5rem 0 0.5rem;
+}
+.offer-grid {
+    max-width: 1000px;
+    margin: 3.5rem auto 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    gap: 2rem;
+    padding: 0 2rem 5rem 2rem;
+}
+.offer {
+    border: 2px solid #fff;
+    width: 18rem;
+    height: 14rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.offer-grid a {
+    text-decoration: none;
+}
+.offer-grid a:hover .offer {
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(4px);
+    transition: 0.1s;
+}
+.offer-grid h3 {
+    color: #fff;
+    font-size: 1.5rem;
+}
+.offer img {
+    width: 4rem;
+    height: auto;
+    filter: invert(100%);
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
+/* ------------------ ANGEBOT - EINZEL ------------------ */
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 2rem 1rem 4rem 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 6rem;
+}
+.einzel h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.einzel h3 {
+    text-align: center;
+}
+.einzelimg {
+    max-width: 30rem;
+    height: auto;
+    margin: 0 auto;
+}
+.einzelimg img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+.spread {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1rem;
+    max-width: 30rem;
+    margin: 0 auto;
+}
+.spread p:nth-child(odd) {
+    text-align: left; /* das erste <p> in .spread Linksbündig */
+}
+
+.spread p:nth-child(even) {
+    text-align: right; /* das erste <p> in .spread  Rechtsbündig */
+}
+/* ------------------ ANGEBOT - ANFAHRTSPAUSCHALE ------------------ */
+#pauschale {
+    background: url('images/Frau-mit-Braids.webp') no-repeat center center fixed;
+    background-size: cover;
+    padding: 2rem 0 1.5rem 0;
+    position: relative;
+}
+.mini-title {
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 0;
+    padding-bottom: 1.547648rem;
+}
+table {
+    position: relative;
+    margin-top: 8.5rem;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+    text-align: center;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-radius: 12px 12px 0 0;
+    overflow: hidden;
+    box-shadow: 0 12px 6px rgba(32, 32, 32, 0.3);
+    background: #fff;
+}
+th,td {
+    padding: 12px 15px
+}
+th {
+    background: rgb(0,150,136);
+    color: #fff;
+    font-weight: 600;
+}
+tr:nth-child(odd){
+    background-color: #d8d8d8;
+}
+.pauschale p:nth-child(3) {
+    margin-top: -7rem;
+    text-align: center;
+    font-size: 0.87rem;
+    color: white;
+
+}
+/* ------------------ GALLERIE ------------------ */
+#gallerie {
+    background-color: rgb(4, 105, 95);
+    background-size: cover;
+    background-position: center;
+    min-height: 100svh;
+}
+.gallery-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 1rem 5rem 1rem;
+}
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Setzt das Verhältnis der Bilder auf 1:1 */
+}
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Schneidet das Bild zu, um es im Container zu skalieren */
+    display: block;
+    cursor: pointer;
+    transition: box-shadow 0.15s ease-in-out; /* Beibehaltung der bestehenden Übergangseffekte */
+}
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    overflow: hidden;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s, visibility 0.5s;
+    visibility: hidden;
+}
+.overlay.show {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+}
+.overlay-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+.overlay-content img {
+    max-width: 90%;
+    max-height: 90%;
+    margin: auto;
+}
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+}
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+}
+.prev-btn {
+    left: 30px;
+}
+.next-btn {
+    right: 30px;
+}
+/* ------------------ ÜBER MICH ------------------ */
+#übermich {
+    background: linear-gradient(
+        rgba(0,0,0,0.5), 
+        rgba(0,0,0,0.5) 20%,
+        rgba(0, 150, 136, 0.5),
+        rgb(0,150,136)) , 
+        url(images/Frau-mit-gewickelten-Haaren.webp);
+    background-size: cover;
+    background-position: center;
+    min-height: 100svh;
+}
+.trenner {
+    max-width: 30rem;
+    margin: 0 auto;
+}
+.trenner img {
+    width: 100%;
+    height: auto;
+    filter: invert(100%);
+}
+#übermich h2 {
+    margin-top: 3rem;
+}
+#übermich p {
+    padding: 2rem 1rem 3rem 1rem;
+    color: white;
+    text-align: center;
+    max-width: 60rem;
+    margin: 0 auto;
+    font-size: 1.8rem;
+    font-family: Indie Flower;
+}
+.tanja {
+    max-width: 23rem;
+    height: auto;
+    margin: 0 auto;
+    padding: 2rem 2rem 0 2rem;
+}
+.tanja2 {
+    max-width: 35rem;
+    height: auto;
+    margin: -3rem auto 0 auto;
+    padding: 0rem 2rem 0 2rem;
+}
+.tanja img, .tanja2 img {
+    width: 100%;
+    height: auto;
+    border-radius: 2rem;
+}
+/* ------------------ KONTAKT ------------------ */
+#kontakt {
+    background: linear-gradient(
+        rgba(0,0,0,0.5), 
+        rgba(0,0,0,0.5) 20%,
+        rgba(0, 150, 136, 0.5),
+        rgb(0,150,136)) , 
+        url(images/stuhl-in-einem-friseursalon.webp);
+    background-size: cover;
+    background-position: center;
+    min-height: 100svh;
+}
+.kontakt-grid {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1300px;
+    margin: 5rem auto 0 auto;
+    gap: 3rem;
+    color: white;
+}
+.kontakt {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.kontakt-img {
+    padding: 1rem;
+    background-color: #009688;
+    border-radius: 1rem;
+}
+.kontakt-img img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: auto;
+}
+.kontakt-grid a {
+    text-decoration: underline;
+    color: white;
+    font-weight: 400;
+    cursor: pointer;
+}
+#mapsnfeature {
+    background-color: #009688;
+    display: flex;
+    color: #fff;
+}
+.map-container {
+    position: relative;
+    width: 100%;
+    height: 50%;
+}
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.rabatts {
+    text-align: center;
+    width: 100%;
+    height: 50%;
+    padding: 2rem 0;
+}
+.rabatts h2 {
+    font-size: 2rem;
+}
+.strich {
+    width: 70%;
+    height: 1.75px;
+    margin: 0.25rem auto 0.8rem auto;
+    background: white;
+}
+.rabatts-title {
+    font-weight: 600;
+}
+.pause {
+    margin-bottom: 1.8rem;
+}
+.kleinp {
+    font-size: 0.85rem;
+}
+/* ------------------ IMPRESSUM ------------------ */
+#impressum {
+    background: linear-gradient(
+        rgba(0,0,0,0.65), 
+        rgba(0,0,0,0.72),
+        rgba(0, 0, 0, 0.8),
+        rgb(0, 0, 0)) , 
+        url(images/Tanja-Hunkeler-schneidet-Mann-Haare.webp);
+    background-size: cover;
+    background-position: center;
+    min-height: 100svh;
+}
+#impressum h3 {
+    color: white;
+    font-size: 3rem;
+}
+.cont {
+    max-width: 1300px;
+    margin: 0 auto;
+    color: white;
+    padding: 4rem 2rem 4rem 2rem;
+}
+#impressum h4 {
+    font-weight: 500;
+    font-size: 1.75rem;
+}
+#impressum h5 {
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+/* ------------------ FOOTER ------------------ */
+footer {
+    color: white;
+    background-color: #252525;
+}
+footer p {
+    font-weight: 350;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+footer a:hover {
+    color: rgba(250, 250, 250, 0.6);
+}
+.footer-grid {
+    padding: 3rem 1rem;
+    max-width: 1300px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 25% 25% 50%;
+}
+.footer-middle a:nth-of-type(1) img,
+.footer-middle a:nth-of-type(2) img {
+    background-color: #444444;
+    padding: 10px;
+    box-sizing: content-box;
+}
+.footer-middle a:nth-of-type(1):hover img,
+.footer-middle a:nth-of-type(2):hover img {
+    background-color: #353535;
+}
+footer img {
+    width: 1.4rem;
+    height: auto;
+    margin: 0.3rem 0 -0.3rem 0;
+}
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+input, textarea, button {
+    background-color: #444444;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-family: Poppins;
+}
+input::placeholder, textarea::placeholder {
+    color: #fff;
+}
+input, textarea {
+    flex: 1 1 48%;
+}
+textarea {
+    flex: 1 1 100%;
+    resize: none;
+    height: 8rem;
+}
+input:focus, textarea:focus {
+    outline: none; /* Verhindert den Fokus-Rahmen */
+}
+button {
+    background-color: #444444;
+    cursor: pointer;
+    padding: 0.7rem 2rem;
+    font-size: 0.8rem;
+}
+button:hover {
+    background-color: #353535;
+}
+#erfolg p {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 5rem;
+}
+/* ------------------ MEDIA QUERYS ------------------ */
+/* ------------------ MEDIA QUERYS ------------------ */
+/* ------------------ MEDIA QUERYS ------------------ */
+@media (prefers-reduced-motion: no-preference) {
+    *{scroll-behavior: smooth;}
+}
+@media screen and (max-width: 1700px) {
+    .title {
+        padding-top: 9rem;
+    }
+    h1 {
+        font-size: 5.7rem;
+    }
+}
+@media screen and (max-width: 1300px) {
+    .start-h3 {
+        font-size: 3rem;
+    }
+    .cont {
+        padding: 6rem 2rem 4rem 2rem;
+    }
+}
+@media screen and (max-width: 1150px) {
+    .container {
+        display: block;
+    }
+    .einzel {
+        margin-bottom: 4rem;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .footer-grid {
+        display: block;
+    }
+    .offer-grid {
+        max-width: 680px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #übermich p {
+        font-size: 1.7rem;
+    }
+    .kontakt-grid {
+        display: block;
+    }
+    .kontakt {
+        margin-bottom: 3rem;
+    }
+}
+@media screen and (max-width: 700px) {
+    h1 {
+        font-size: 5rem;
+    }
+    .home-btn {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .title-text {
+        padding: 5.4rem 0 1rem 0;
+    }
+    .service-container {
+        padding: 0 1rem;
+    }
+    .service-container, .spreader {
+        display: block;
+        margin: 0 auto;
+    }
+    .feature-icon {
+        display: block;
+        margin: 0 auto 1rem auto;
+    }
+    .service-bild {
+        margin: 0 auto;
+    }
+    .text-container {
+        text-align: center;
+    }
+    .offer-grid {
+        display: block;
+        max-width: 350px;
+    }
+    .offer-grid .offer {
+        margin-bottom: 2rem;
+    }
+    .title-text2 h1 {
+        padding-top: 3rem;
+        font-size: 4.2rem;
+    }
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+    #mapsnfeature {
+        display: block;
+    }
+    .map-container {
+        width: 100%;
+        height: 17rem;
+    }
+}
+@media screen and (max-width: 500px) {
+    #logo {
+        max-width: 50px;
+        height: auto;
+    }
+    h1 {
+        font-size: 4rem;
+    }
+    .start-h3 {
+        font-size: 2.5rem;
+    }
+    .title-text2 h1 {
+        font-size: 3rem;
+    }
+    .home-btn {
+        padding-top: 1rem;
+    }
+    #übermich h2 {
+        font-size: 2.5rem;
+    }
+    #übermich p {
+        font-size: 1.4rem;
+    }
+    .continue {
+        bottom: 1.5rem;
+    }
+}
+@media screen and (max-width: 400) {
+}
+@media screen and (max-width: 350px) {
+    h3 {
+        font-size: 1.6rem;
+    }
+    .continue {
+        position: static; /* Zurücksetzen der Position */
+        padding-top: 2rem; /* Neues Padding für das Element */
+        text-align: center; /* Zentrieren des Inhalts */
+    }
+    .continue img {
+        display: inline-block; /* Als inline-block-Element behandeln */
+    }
+}
