@@ -786,6 +786,7 @@ button:hover {
         margin-bottom: 2rem;
     }
     .title-text2 h1 {
+        padding-top: 3rem;
         font-size: 4.2rem;
     }
     .gallery-grid {
