@@ -145,6 +145,7 @@ h4 {
     margin: 2rem auto;
 }
 .continue img {
+    margin: 0 auto;
     width: 50px;
     height: 45px;
     opacity: 55%;
