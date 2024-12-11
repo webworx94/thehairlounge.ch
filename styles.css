@@ -141,12 +141,8 @@ h4 {
     font-weight: normal;
 }
 .continue {
-    position: absolute;
-    bottom: 3rem;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    text-align: center;
+    display: block;
+    margin: 0 auto;
 }
 .continue img {
     width: 50px;
