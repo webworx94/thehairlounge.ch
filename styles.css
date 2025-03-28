@@ -622,6 +622,9 @@ tr:nth-child(odd){
     font-weight: 500;
     font-size: 1.25rem;
 }
+#impressum a {
+    color: white;
+}
 /* ------------------ FOOTER ------------------ */
 footer {
     color: white;
